@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.example.weatherapp"
     compileSdk = 34
-
+    buildFeatures{
+    viewBinding = true
+     }
     defaultConfig {
         applicationId = "com.example.weatherapp"
         minSdk = 24
@@ -43,4 +45,8 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     //  lottie animations
     implementation("com.airbnb.android:lottie:6.1.0")
+
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
 }
